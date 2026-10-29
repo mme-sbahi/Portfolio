@@ -1,31 +1,24 @@
-"use client";
-import Aboutme from "@/components/aboutme";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Footer from "@/components/footer";
-import LoadingAnimation from "@/components/loadingAnimatio";
-import Projects from "@/components/projects";
-import Hero from "@/components/hero";
-import Sparkles from "@/components/sparkles";
-import { useState } from "react";
+import Nav from "@/components/site/nav";
+import Hero from "@/components/site/hero";
+import Services from "@/components/site/services";
+import Projects from "@/components/site/projects";
+import { Experience, Skills } from "@/components/site/experience";
+import Contact from "@/components/site/contact";
+import Footer from "@/components/site/footer";
+
 export default function Home() {
-  const [loading, setLoading] = useState(true);
   return (
-    <main className="size-full">
-      {loading && <LoadingAnimation onComplete={() => setLoading(false)} />}
-      {!loading && (
-        <div className="relative">
-          <Sparkles />
-          <div className="flex flex-col gap-10 min-h-screen bg-gradient-to-br from-primary/10 via-transparent to-accent/10">
-            <Hero />
-            <Aboutme />
-            <Projects />
-            <Experience />
-            <Contact />
-            <Footer />
-          </div>
-        </div>
-      )}
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Services />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

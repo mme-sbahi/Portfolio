@@ -1,21 +1,23 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { Toaster } from "sonner";
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
+
+export const metadata: Metadata = {
+  title: "Meryeme Mesbahi · Full-Stack & Blockchain Developer",
+  description:
+    "Full-stack web apps, AI document chatbots (RAG), smart contracts and Power BI dashboards. Next.js, NestJS, FastAPI, Solidity.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.className} overflow-y-scroll overflow-x-hidden`}
-    >
-      <body>
+    <html lang="en" className={`${inter.variable} ${display.variable} overflow-x-hidden`}>
+      <body className="font-sans">
         {children}
-        <Toaster position="top-right" richColors closeButton />
+        <Toaster position="top-right" theme="dark" richColors closeButton />
       </body>
     </html>
   );
