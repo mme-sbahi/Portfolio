@@ -5,7 +5,7 @@ import './globals.css';
 import './motion.css';
 import MotionProvider from '@/components/MotionProvider';
 
-const origin = 'https://meryememesbahi-portfolio.vercel.app';
+const origin = 'https://meryememesbahi.me';
 export const metadata: Metadata = {
   metadataBase: new URL(origin),
   title: 'Meryeme Mesbahi — Full-Stack & Blockchain Developer',
