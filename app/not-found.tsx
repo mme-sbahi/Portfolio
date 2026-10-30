@@ -1,0 +1,1 @@
+export default function NotFound() { return <main className="not-found"><span className="mono">404 / A SMALL DETOUR</span><h1>This page hasn’t<br />been built.</h1><a className="pill-button dark-button" href="/">Back to the portfolio ↗</a></main>; }
