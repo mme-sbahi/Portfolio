@@ -72,7 +72,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {playing && project.video ? <><video controls autoPlay playsInline preload="metadata" poster={project.image} onError={() => setVideoError(true)}><source src={project.video} type="video/mp4" />Your browser does not support this video.</video>{videoError && <p className="video-error" role="alert">The video couldn’t load. <a href={project.video} target="_blank" rel="noreferrer">Open the original demo ↗</a></p>}</> : <Image src={project.image} alt={`${project.title} interface preview`} width={1400} height={809} sizes="90vw" />}
         </div>
         <div className="dialog-details"><p>{project.description}</p><div><span className="mono">PROJECT FOCUS</span><ul>{project.focus.map(focus => <li key={focus}>{focus}</li>)}</ul></div></div>
-        <div className="dialog-bottom"><div className="tag-list">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{project.video && !playing && <button className="pill-button dark-button" onClick={() => { setVideoError(false); setPlaying(true); }}>Watch original demo <span aria-hidden="true">▷</span></button>}</div>
+        <div className="dialog-bottom"><div className="tag-list">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div><div className="dialog-actions">{project.repo && <a className="pill-button outline-button" href={project.repo} target="_blank" rel="noreferrer">View on GitHub<Arrow diagonal /></a>}{project.video && !playing && <button className="pill-button dark-button" onClick={() => { setVideoError(false); setPlaying(true); }}>Watch original demo <span aria-hidden="true">▷</span></button>}</div></div>
       </div>
     </dialog>, document.body)}
   </>;

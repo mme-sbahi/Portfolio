@@ -25,7 +25,7 @@ export default function ContactForm() {
   }
 
   return <form className="contact-form" onSubmit={submit}>
-    <div className="contact-form-row"><label>Your name<input name="name" autoComplete="name" placeholder="Alex Morgan" required maxLength={120} /></label><label>Email address<input type="email" name="email" autoComplete="email" placeholder="alex@company.com" required maxLength={254} /></label></div>
+    <div className="contact-form-row"><label>Your name<input name="name" autoComplete="name" placeholder="Yassine Benjelloun" required maxLength={120} /></label><label>Email address<input type="email" name="email" autoComplete="email" placeholder="yassine@company.com" required maxLength={254} /></label></div>
     <label>A little about your idea<textarea name="message" placeholder="A project, an opportunity, or just a hello…" required minLength={10} maxLength={5000} rows={2} /></label>
     <div className="honeypot" aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
     <div className="contact-form-bottom"><p className="form-note">Good work starts with a conversation.</p><button className="pill-button light-button" disabled={status === 'sending'} type="submit">{status === 'sending' ? 'Sending…' : 'Send message'}<Arrow diagonal /></button></div>

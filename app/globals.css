@@ -18,3 +18,4 @@
 @media(hover:none){.project-image{filter:grayscale(1)}.project-open>span{opacity:1;transform:none}.about-portrait:hover>img{filter:grayscale(1)}}
 @media(prefers-contrast:more){:root{--muted:#50504b;--line:#888}.mono{color:inherit!important}}
 .experience-list{display:flex;flex-direction:column;gap:60px}
+.dialog-actions{display:flex;flex-wrap:wrap;gap:12px}.outline-button{border:1px solid var(--ink);color:var(--ink)}.outline-button:hover{background:var(--ink);color:var(--paper)}

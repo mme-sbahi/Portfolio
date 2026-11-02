@@ -8,6 +8,7 @@ export type Project = {
   tags: string[];
   focus: string[];
   video?: string;
+  repo?: string;
 };
 
 export const projects: Project[] = [
@@ -16,24 +17,28 @@ export const projects: Project[] = [
     description: 'Teamwork, organized end to end. A full-stack task manager with secure login, project invitations, a Kanban board, and a live dashboard, shipped with one-command Docker setup.',
     image: '/images/taskflow.webp', tags: ['Next.js', 'NestJS', 'PostgreSQL', 'TypeORM', 'Docker'],
     focus: ['JWT authentication with refresh tokens', 'Invite / accept / decline project flow', 'REST API documented with Swagger'],
+    repo: 'https://github.com/mme-sbahi/Task-Manager',
   },
   {
     slug: 'pdfmind', number: '02', title: 'PDFMind', category: 'AI · DOCUMENT CHATBOT (RAG)',
     description: 'Ask your documents anything. Upload PDFs and get answers that cite the exact file and page, and an honest “I don’t know” when the documents don’t cover the question.',
     image: '/images/pdfmind.webp', tags: ['Python', 'FastAPI', 'ChromaDB', 'React', 'Docker'],
     focus: ['Semantic search over vector embeddings', 'Source citations on every answer', 'LLM answers grounded in your documents'],
+    repo: 'https://github.com/mme-sbahi/PDF-mind',
   },
   {
     slug: 'hypertube', number: '03', title: 'HyperTube', category: 'VIDEO STREAMING PLATFORM',
     description: 'Watch while it downloads. A streaming platform with live video transcoding, multi-language subtitles, and OAuth sign-in with 42 and Google.',
     image: '/images/hypertube.webp', tags: ['NestJS', 'React', 'PostgreSQL', 'FFmpeg', 'OAuth 2.0'],
     focus: ['Live FFmpeg transcoding (MKV/AVI to MP4)', 'HTTP range streaming with seeking', 'Search, filters, and infinite scroll'],
+    repo: 'https://github.com/mme-sbahi/Reelix',
   },
   {
     slug: 'tokenizer', number: '04', title: 'Tokenizer & TokenizeArt', category: 'BLOCKCHAIN · SMART CONTRACTS',
     description: 'Tokens and NFTs, on-chain. An ERC-20 token with owner-only minting and burning, and an ERC-721 NFT collection with metadata on IPFS, both deployed on Ethereum Sepolia.',
     image: '/images/tokenizer.webp', tags: ['Solidity', 'Hardhat', 'OpenZeppelin', 'ethers.js', 'IPFS'],
     focus: ['OpenZeppelin standards with access control', 'Automated Hardhat tests', 'Live contracts on Sepolia Etherscan'],
+    repo: 'https://github.com/mme-sbahi/Tokenizer',
   },
   {
     slug: 'pipo', number: '05', title: 'PiPo', category: 'REAL-TIME GAMING PLATFORM',
@@ -47,6 +52,7 @@ export const projects: Project[] = [
     image: '/images/betahiring.webp', tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     focus: ['Candidate analysis interfaces', 'Hiring dashboards', 'Interactive evaluations'],
     video: '/demos/betahiring.mp4',
+    repo: 'https://github.com/Kelmoutouakil/BetaResuMatch',
   },
   {
     slug: 'chatlilo', number: '07', title: 'Chatlilo', category: 'CONVERSATIONAL AI',
@@ -64,11 +70,6 @@ export const foundations = [
 ];
 
 export const experience = [
-  {
-    period: 'APR 2026 — OCT 2026', type: 'INTERNSHIP', role: 'Data Analyst (Power BI)', company: 'STMicroelectronics · Bouskoura',
-    summary: 'Designed interactive Power BI dashboards from Excel data sources, turning raw operational data into KPIs and visual reports for the team.',
-    tags: ['Power BI', 'Excel', 'Power Query', 'Data visualization'],
-  },
   {
     period: 'MAY 2025 — NOV 2025', type: 'CO-FOUNDER', role: 'Full-Stack Developer', company: 'Chatlilo · Casablanca',
     summary: 'Co-founded a conversational AI startup and built its product from the first prototype to a working version, owning the frontend, backend API, and database.',
