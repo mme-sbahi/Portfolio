@@ -45,6 +45,7 @@ export const projects: Project[] = [
     description: 'A real-time playground. A full-stack platform bringing authentication, user profiles, live chat, and multiplayer ping pong into one experience.',
     image: '/images/pipo.webp', tags: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Shadcn UI'],
     focus: ['Real-time Pong game', 'Authentication & user profiles', 'Integrated chat system'],
+    repo: 'https://github.com/yappg/ft_transcendence',
   },
   {
     slug: 'betahiring', number: '06', title: 'Betahiring AI', category: 'AI · PRODUCT INTERFACE',
