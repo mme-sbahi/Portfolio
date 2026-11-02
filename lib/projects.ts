@@ -72,9 +72,9 @@ export const foundations = [
 
 export const experience = [
   {
-    period: 'MAY 2025 — NOV 2025', type: 'CO-FOUNDER', role: 'Full-Stack Developer', company: 'Chatlilo · Casablanca',
-    summary: 'Co-founded a conversational AI startup and built its product from the first prototype to a working version, owning the frontend, backend API, and database.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'REST APIs'],
+    period: 'MAY 2025 — DEC 2025', type: 'CO-FOUNDER', role: 'Frontend Developer', company: 'Chatlilo · Casablanca',
+    summary: 'Co-founded a conversational AI startup and built its entire UI as the sole frontend developer: a design system, 20+ reusable React components, Redux Toolkit state management, and REST API integration across every user flow.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS'],
   },
 ];
 
